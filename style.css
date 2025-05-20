@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #7cbcc4;
+}
+
+body{
+    background: url(image/clouds.png) center center no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #08526b;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 20px 15px 10px 2px #0000003c;
+}
+
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #08526b;
+    /* border: 2px solid #041f285b; */
+    box-shadow: 5px 5px 10px -3px #00000059, -5px -5px 15px 3px #0b5b75;
+}
+
+button:active{
+    background-color: #094458;
+    box-shadow: inset 5px 5px 4px 0px rgba(0, 0, 0, 0.221);
+}
+
+.display{
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    word-break: break-all;
+    border-radius: 10px;
+    margin: 5px 5px 10px;
+    background-color: #062f3d;
+    border-radius: 15px;
+    border: 10px solid #074960;
+    box-shadow: 5px 5px 10px -3px #0000003c, -5px -5px 15px 3px #0b5b75;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+#valor-anterior{
+    font-size: 35px;
+    font-weight: 600;  
+    color: #67cff1; 
+}
+
+#valor-actual{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.745);
+}
+
